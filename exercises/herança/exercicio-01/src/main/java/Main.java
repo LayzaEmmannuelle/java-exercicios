@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/** 
+ * A classe Main define a aplicação para as classes e métodos criados.
+ * 
+*/
 public class Main {
     
     public static void main(String[] args) {

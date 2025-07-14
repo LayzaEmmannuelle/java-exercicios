@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 import java.util.ArrayList;
 
+/**
+ * Classe main que define a aplicação para as classes e métodos criados.
+ * 
+ */
 public class Main {
 
     public static void main (String args[]){

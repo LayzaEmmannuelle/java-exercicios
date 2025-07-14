@@ -1,17 +1,32 @@
+/**
+ * Classe que representa um avião, herda da classe Veículo.
+ * Possui registro aeronáutico e controle de decolagem.
+ * 
+ */
 public class Avião extends Veículo{
 
     private String registro_aeronaútico;
     private boolean decolar;
     
-    
+    /**
+     * Construtor padrão da classe Avião.
+     */
     public Avião() {
     }
 
+    /**
+     * Construtor da classe Avião com registro aeronáutico.
+     * 
+     * @param registro_aeronaútico Número do registro aeronáutico
+     */
     public Avião(String registro_aeronaútico) {
         this.registro_aeronaútico = registro_aeronaútico;
     }
 
-
+    /**
+     * Método que representa a decolagem do avião.
+     * Leva em consideração se ele está ligado.
+     */
     public void decolar(){
 
         if (isOn() == true) {
@@ -30,6 +45,10 @@ public class Avião extends Veículo{
         
     }
 
+    /**
+     * Método que representa a aterrissagem do avião.
+     * Leva em consideração se ele está ligado.
+     */
     public void pousar(){
 
         if (isOn() == true) {
@@ -47,11 +66,20 @@ public class Avião extends Veículo{
         
     }
 
-
+    /**
+     * Retorna o número do registro aeronáutico do avião.
+     * 
+     * @return Número do registro aeronáutico do avião
+     */
     public String getRegistro_aeronaútico() {
         return registro_aeronaútico;
     }
 
+    /**
+     * Define o número do registro aeronáutico do avião.
+     * 
+     * @param registro_aeronaútico Novo número do registro aeronáutico do avião
+     */
     public void setRegistro_aeronaútico(String registro_aeronaútico) {
         this.registro_aeronaútico = registro_aeronaútico;
     }
