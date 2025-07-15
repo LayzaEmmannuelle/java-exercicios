@@ -8,10 +8,30 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Data Access Object (DAO) para manipulação persistente de dados de clientes.
+ * 
+ * Esta classe realiza operações de leitura, escrita e remoção de clientes
+ * em um arquivo de texto denominado {@code clientes.txt}.
+ * 
+ * O cliente é salvo com seu endereço serializado em formato simples (CSV),
+ * e na leitura o endereço é desserializado para o objeto {@link Endereco}.
+ * 
+ * O arquivo é manipulado diretamente, e erros de E/S são tratados com mensagens no console.
+ * 
+ */
 public class ClienteDAO {
+
+    /** Nome do arquivo usado para armazenar os dados dos clientes. */
     private static final String ARQUIVO = "clientes.txt";
 
-    // Salva cliente com endereço serializado
+    /**
+     * Salva um cliente no arquivo, adicionando ao final do arquivo existente.
+     * 
+     * O endereço do cliente, se existir, é serializado no formato "tipo,numero,cep".
+     * 
+     * @param cliente o cliente a ser salvo
+     */
     public void salvar(Cliente cliente) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(ARQUIVO, true))) {
             String enderecoStr = "";
@@ -29,7 +49,15 @@ public class ClienteDAO {
         }
     }
 
-    // Lista clientes desserializando endereço
+    /**
+     * Lista todos os clientes armazenados no arquivo.
+     * 
+     * Realiza a leitura do arquivo, desserializando as informações do cliente
+     * e seu endereço (quando presente) para objetos correspondentes.
+     * 
+     * @return uma lista contendo todos os clientes encontrados no arquivo;
+     *         lista vazia se o arquivo não existir ou estiver vazio
+     */
     public List<Cliente> listar() {
         List<Cliente> clientes = new ArrayList<>();
         File file = new File(ARQUIVO);
@@ -68,7 +96,15 @@ public class ClienteDAO {
         return clientes;
     }
 
-    // Remove cliente pelo CPF
+    /**
+     * Remove um cliente do arquivo com base no CPF informado.
+     * 
+     * A operação recarrega todos os clientes, remove o cliente com o CPF especificado
+     * e reescreve o arquivo com os dados atualizados.
+     * 
+     * @param cpf o CPF do cliente que deve ser removido
+     * @return {@code true} se um cliente foi removido; {@code false} caso contrário
+     */
     public boolean remover(String cpf) {
         List<Cliente> clientes = listar();
         boolean removido = clientes.removeIf(c -> c.getCpf().equals(cpf));

@@ -10,13 +10,41 @@ import com.restaurante.controllers.endereco.SearchEnderecoController;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * Controller responsável por lidar com a criação de clientes no sistema.
+ * 
+ * Esta classe realiza a captura de dados do cliente através da view,
+ * permite a seleção ou criação de um endereço, associa o endereço ao cliente
+ * e persiste os dados utilizando os DAOs.
+ * 
+ * Funciona em conjunto com a camada de visualização ({@link ClienteView}),
+ * os modelos {@link Cliente} e {@link Endereco}, e os DAOs correspondentes.
+ */
 public class CreateClienteController {
+
+    /** Interface de entrada e saída para o usuário. */
     private ClienteView view = new ClienteView();
+
+    /** Objeto de acesso a dados para clientes. */
     private ClienteDAO dao = new ClienteDAO();
+
+    /** Objeto de acesso a dados para endereços. */
     private EnderecoDAO enderecoDAO = new EnderecoDAO();
+
+    /** Controlador de busca de endereços por CEP. */
     private SearchEnderecoController searchEndereco = new SearchEnderecoController();
+
+    /** Lista de endereços disponíveis no sistema. */
     private List<Endereco> enderecos;
 
+    /**
+     * Executa o fluxo completo de cadastro de um novo cliente.
+     * 
+     * O método captura os dados do cliente, solicita ao usuário que selecione ou
+     * cadastre um endereço, associa o endereço ao cliente e salva o cliente no sistema.
+     * 
+     * @param enderecos lista de endereços existentes no sistema
+     */
     public void executar(List<Endereco> enderecos) {
         this.enderecos = enderecos;
 
@@ -28,6 +56,14 @@ public class CreateClienteController {
         view.mostrarMensagem("Cliente cadastrado com sucesso!");
     }
 
+    /**
+     * Permite ao usuário buscar um endereço existente ou cadastrar um novo.
+     * 
+     * O método pergunta ao usuário se ele deseja usar um endereço já existente
+     * (com base no CEP) ou cadastrar um novo endereço preenchendo os dados manualmente.
+     * 
+     * @return o endereço selecionado ou recém-cadastrado
+     */
     private Endereco buscarOuCriarEndereco() {
         Scanner scanner = view.getScanner();
         System.out.println("Deseja:");

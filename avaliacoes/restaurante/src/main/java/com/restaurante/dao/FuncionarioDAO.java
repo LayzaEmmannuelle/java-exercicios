@@ -7,10 +7,32 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Data Access Object (DAO) responsável pela persistência e manipulação de dados dos funcionários.
+ * 
+ * Esta classe realiza operações de salvar, listar e remover funcionários
+ * em um arquivo de texto denominado {@code funcionarios.txt}.
+ * 
+ * Os funcionários são armazenados com suas mesas associadas serializadas em formato texto.
+ * 
+ * Os dados das mesas são serializados como "numero,local" separados por pipe "|".
+ * 
+ * Exibe mensagens no console em caso de erros de I/O.
+ * 
+ */
 public class FuncionarioDAO {
+
+    /** Nome do arquivo usado para armazenar os dados dos funcionários. */
     private static final String ARQUIVO = "funcionarios.txt";
 
-    // Salvar funcionário no arquivo com mesas serializadas
+    /**
+     * Salva um funcionário no arquivo, adicionando ao final.
+     * 
+     * Serializa a lista de mesas associadas ao funcionário no formato
+     * "numero,local|numero,local|...".
+     * 
+     * @param funcionario o funcionário a ser salvo
+     */
     public void salvar(Funcionario funcionario) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(ARQUIVO, true))) {
             StringBuilder sbMesas = new StringBuilder();
@@ -33,7 +55,14 @@ public class FuncionarioDAO {
         }
     }
 
-    // Listar todos os funcionários do arquivo, desserializando as mesas
+    /**
+     * Lista todos os funcionários armazenados no arquivo.
+     * 
+     * Desserializa as informações dos funcionários e suas mesas para objetos correspondentes.
+     * 
+     * @return lista com todos os funcionários encontrados no arquivo;
+     *         lista vazia se o arquivo não existir ou estiver vazio
+     */
     public List<Funcionario> listar() {
         List<Funcionario> funcionarios = new ArrayList<>();
         File file = new File(ARQUIVO);
@@ -73,7 +102,15 @@ public class FuncionarioDAO {
         return funcionarios;
     }
 
-    // Remover funcionário pelo CPF
+    /**
+     * Remove um funcionário do arquivo com base no CPF informado.
+     * 
+     * Recarrega todos os funcionários, remove o funcionário com o CPF especificado
+     * e reescreve o arquivo com os dados atualizados.
+     * 
+     * @param cpf o CPF do funcionário a ser removido
+     * @return {@code true} se um funcionário foi removido; {@code false} caso contrário
+     */
     public boolean remover(String cpf) {
         List<Funcionario> funcionarios = listar();
         boolean removido = funcionarios.removeIf(f -> f.getCpf().equals(cpf));
