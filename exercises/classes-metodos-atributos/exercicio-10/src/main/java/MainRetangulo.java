@@ -1,3 +1,7 @@
+/**
+ * Classe MainRetangulo que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainRetangulo {
 
     public static void main(String[] args) {

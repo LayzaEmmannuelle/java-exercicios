@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * Classe RaizBaskara que define a aplicação para classes e métodos.
+ * Lê três valores dos coeficientes "a", "b" e "c", calcula usando a Fórmula de Bháskara e mostra
+ * as raízes da equação. 
+ * 
+ */
 public class RaizBaskara {
 
     public static void main(String[] args) {

@@ -1,5 +1,9 @@
 import java.time.LocalDate;
 
+/**
+ * Classe MainPessoa que define a aplicação para as classes e métodos existentes.
+ * 
+ */
 public class MainPessoa {
     
     public static void main(String[] args) {

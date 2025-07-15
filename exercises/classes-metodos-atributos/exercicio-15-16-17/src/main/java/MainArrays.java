@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Classe MainArrays que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainArrays {
 
    public static void main(String[] args) {

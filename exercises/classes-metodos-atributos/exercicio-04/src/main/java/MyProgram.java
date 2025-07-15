@@ -1,4 +1,8 @@
-
+/**
+ * Classe MyProgram que define a aplicação para classes e métodos.
+ * Imprime uma contagem crescente(1-10) e uma decrescente(10-1).
+ * 
+ */
 public class MyProgram {
 
     public static void main(String[] args) {

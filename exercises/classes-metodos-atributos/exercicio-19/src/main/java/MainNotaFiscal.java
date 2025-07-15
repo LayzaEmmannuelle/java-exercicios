@@ -1,5 +1,9 @@
 import java.time.LocalDate;
 
+/**
+ * Classe MainNotaFiscal que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainNotaFiscal {
 
     public static void main(String[] args) {

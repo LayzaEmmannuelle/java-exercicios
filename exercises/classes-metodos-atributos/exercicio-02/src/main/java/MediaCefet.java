@@ -1,5 +1,12 @@
 import java.util.Scanner;
 
+/**
+ * Classe MediaCefet que define a aplicação para classes e métodos.
+ * Lê duas notas do usuário e informa se são válidas ou não.
+ * Após isso calcula a média e informa se o aluno foi aprovado, reprovado ou se está na prova final.
+ * Caso o aluno vá para a prova final, a classe lê a a nota da PF e informa se foi aprovado ou não.
+ * 
+ */
 public class MediaCefet {
     
     public static void main(String[] args) {
