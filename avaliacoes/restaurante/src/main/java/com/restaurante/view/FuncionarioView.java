@@ -10,6 +10,52 @@ import com.restaurante.model.Mesa;
 public class FuncionarioView {
     private Scanner scanner = new Scanner(System.in);
 
+    public Funcionario capturarFuncionarioComMesasExistentes(List<Mesa> mesasExistentes) {
+        System.out.print("Nome: ");
+        String nome = scanner.nextLine();
+        System.out.print("CPF: ");
+        String cpf = scanner.nextLine();
+        System.out.print("CTP: ");
+        String ctp = scanner.nextLine();
+        System.out.print("Cargo: ");
+        String cargo = scanner.nextLine();
+
+        List<Mesa> mesasSelecionadas = new ArrayList<>();
+        String opcao = "s";
+
+        while (opcao.equalsIgnoreCase("s")) {
+            System.out.println("Mesas disponíveis:");
+            for (int i = 0; i < mesasExistentes.size(); i++) {
+                Mesa m = mesasExistentes.get(i);
+                System.out.printf("%d - Mesa %s - Local: %s%n", i + 1, m.getNumero(), m.getLocal());
+            }
+            System.out.print("Escolha o número da mesa para associar: ");
+            int escolha;
+            try {
+                escolha = Integer.parseInt(scanner.nextLine());
+            } catch (NumberFormatException e) {
+                System.out.println("Entrada inválida, tente novamente.");
+                continue;
+            }
+
+            if (escolha >= 1 && escolha <= mesasExistentes.size()) {
+                Mesa mesaEscolhida = mesasExistentes.get(escolha - 1);
+                if (!mesasSelecionadas.contains(mesaEscolhida)) {
+                    mesasSelecionadas.add(mesaEscolhida);
+                } else {
+                    System.out.println("Mesa já selecionada.");
+                }
+            } else {
+                System.out.println("Opção inválida.");
+            }
+
+            System.out.print("Deseja adicionar outra mesa? (s/n): ");
+            opcao = scanner.nextLine();
+        }
+
+        return new Funcionario(nome, cpf, null, ctp, cargo, mesasSelecionadas);
+    }
+
     public Funcionario capturarFuncionario() {
         System.out.print("Nome: ");
         String nome = scanner.nextLine();
@@ -20,7 +66,6 @@ public class FuncionarioView {
         System.out.print("Cargo: ");
         String cargo = scanner.nextLine();
 
-        // Captura múltiplas mesas
         List<Mesa> mesas = new ArrayList<>();
         String opcao = "s";
 
