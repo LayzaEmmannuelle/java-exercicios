@@ -54,7 +54,7 @@ public class BillyCompoundV implements BasicPower<Hero>, SpecialPower<Hero> {
     }
 
     /**
-     * Usa o poder especial do herói.
+     *Usa o poder especial do herói.
      * Implementação ainda não definida.
      * 
      * @param hero o herói que usará o poder especial

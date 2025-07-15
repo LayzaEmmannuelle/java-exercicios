@@ -30,7 +30,7 @@ public interface BasicPower<Type> {
     public abstract void maxSpeed(Type T);
 
     /**
-     * Executa a ação de voar com base no parâmetro fornecido.
+     *Executa a ação de voar com base no parâmetro fornecido.
      *
      * @param T o valor ou objeto que controla ou define a capacidade de voar
      */

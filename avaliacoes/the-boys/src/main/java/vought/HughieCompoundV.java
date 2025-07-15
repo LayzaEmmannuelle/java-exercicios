@@ -54,7 +54,7 @@ public class HughieCompoundV implements BasicPower<Hero>, SpecialPower<Hero> {
     }
 
     /**
-     * Usa o poder especial do Hughie, que neste caso é um teletransporte com efeito cômico.
+     *Usa o poder especial do Hughie, que neste caso é um teletransporte com efeito cômico.
      * 
      * @param hero o objeto Hero que usará o poder especial
      */

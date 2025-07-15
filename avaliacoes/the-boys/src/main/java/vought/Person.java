@@ -60,7 +60,7 @@ public class Person {
     }
 
     /**
-     * Define o sobrenome da pessoa.
+     *Define o sobrenome da pessoa.
      *
      * @param surname sobrenome a ser definido
      */

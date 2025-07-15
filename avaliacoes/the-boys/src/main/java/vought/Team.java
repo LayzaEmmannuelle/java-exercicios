@@ -39,7 +39,7 @@ public class Team {
     }
 
     /**
-     * Define a lista de heróis do time.
+     *Define a lista de heróis do time.
      *
      * @param heroes nova lista de heróis
      */

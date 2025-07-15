@@ -49,7 +49,7 @@ public class StarLightCompoundV implements BasicPower<StarLight>, SpecialPower<S
     }
 
     /**
-     * Usa o poder especial do StarLight.
+     *Usa o poder especial do StarLight.
      * 
      * @param starLight o objeto StarLight que usará o poder especial
      */

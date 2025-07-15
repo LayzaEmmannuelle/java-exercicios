@@ -129,7 +129,7 @@ public class Hero extends Person {
     }
 
     /**
-     * Define a velocidade do herói.
+     *Define a velocidade do herói.
      *
      * @param speed velocidade a ser definida
      */

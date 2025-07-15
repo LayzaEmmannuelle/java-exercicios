@@ -9,7 +9,7 @@ public class Homelander extends Hero {
 
     /**
      * Construtor que cria um Homelander a partir de uma pessoa base,
-     * com apelido, energia, força e velocidade definidos.
+     *com apelido, energia, força e velocidade definidos.
      * 
      * @param person pessoa base para o Homelander
      * @param nickname apelido do Homelander

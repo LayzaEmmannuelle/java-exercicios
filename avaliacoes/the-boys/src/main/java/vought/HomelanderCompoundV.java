@@ -55,7 +55,7 @@ public class HomelanderCompoundV implements BasicPower<Homelander>, SpecialPower
     }
 
     /**
-     * Executa a ação de voo do Homelander, exibindo uma mensagem indicando sua chegada.
+     *Executa a ação de voo do Homelander, exibindo uma mensagem indicando sua chegada.
      * 
      * @param homelander o objeto Homelander que está voando
      */

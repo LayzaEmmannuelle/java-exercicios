@@ -67,7 +67,7 @@ public class MyApp {
         Hero hughieHero = new Hero(billy, "Brutus", 10, 10, 10);
         HughieCompoundV hughieCompoundV = new HughieCompoundV();
 
-        // Criação do time "boys" e adição dos heróis Hughie e Billy
+        //Criação do time "boys" e adição dos heróis Hughie e Billy
         Team boys = new Team();
         boys.getHeroes().add(hughieHero);
         boys.getHeroes().add(billyHero);

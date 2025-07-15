@@ -9,7 +9,7 @@ package vought;
 public interface SpecialPower<Type> {
 
     /**
-     * Método para usar o poder especial no objeto do tipo {@code Type}.
+     *Método para usar o poder especial no objeto do tipo {@code Type}.
      *
      * @param T o objeto que usará o poder especial
      */
