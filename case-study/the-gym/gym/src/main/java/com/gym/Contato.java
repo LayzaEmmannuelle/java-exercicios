@@ -5,7 +5,7 @@ package com.gym;
  */
 public class Contato {
 
-    /** Tipo do contato (ex: telefone, email, etc). */
+    /** Tipo do contato (ex: telefone, email, etc).*/
     private TipoContato tipo;
 
     /** Conteúdo do contato (ex: número de telefone, endereço de email). */

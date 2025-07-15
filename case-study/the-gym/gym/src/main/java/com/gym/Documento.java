@@ -8,7 +8,7 @@ public class Documento {
     /** Tipo do documento (ex: CPF, RG, CNH). */
     private TipoDoc tipo;
 
-    /** Conteúdo do documento (ex: número do documento). */
+    /** Conteúdo do documento (ex: número do documento).*/
     private String conteudo;
 
     /**

@@ -8,7 +8,7 @@ package com.gym;
  */
 public class Pessoa {
 
-    /** Nome completo da pessoa. */
+    /** Nome completo da pessoa.*/
     private String nome;
 
     /** Documento de identificação da pessoa (CPF, RG, CNH, etc). */

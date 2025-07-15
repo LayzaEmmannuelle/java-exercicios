@@ -8,7 +8,7 @@ public enum TipoDoc {
     /** Documento do tipo CPF (Cadastro de Pessoas Físicas). */
     CPF,
 
-    /** Documento do tipo RG (Registro Geral). */
+    /** Documento do tipo RG (Registro Geral).*/
     RG,
 
     /** Documento do tipo CNH (Carteira Nacional de Habilitação). */

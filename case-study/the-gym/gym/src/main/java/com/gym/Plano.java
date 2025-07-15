@@ -9,7 +9,7 @@ public class Plano {
     /** Tipo do plano (ex: Mensal, Anual). */
     private String tipo;
 
-    /** Valor do plano. */
+    /** Valor do plano.*/
     private float valor;
 
     /** Data de vencimento do plano. */

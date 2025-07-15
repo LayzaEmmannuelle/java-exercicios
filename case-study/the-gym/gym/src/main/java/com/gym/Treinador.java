@@ -8,7 +8,7 @@ package com.gym;
  */
 public class Treinador extends Funcionario {
 
-    /** Registro profissional do treinador (CREF). */
+    /** Registro profissional do treinador (CREF).*/
     private String cref;
 
     /**

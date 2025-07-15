@@ -8,7 +8,7 @@ public enum TipoContato {
     /** Contato do tipo e-mail. */
     EMAIL,
 
-    /** Contato do tipo telefone. */
+    /** Contato do tipo telefone.*/
     TELEFONE,
 
     /** Contato do tipo Instagram. */

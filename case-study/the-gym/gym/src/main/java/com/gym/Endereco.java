@@ -13,7 +13,7 @@ public class Endereco {
     /** Nome da rua. */
     private String rua;
 
-    /** Número do imóvel na rua. */
+    /** Número do imóvel na rua.*/
     private int numero;
 
     /**

@@ -6,7 +6,7 @@ package com.gym;
  */
 public class Assinatura {
     
-    /** Plano associado à assinatura. */
+    /** Plano associado à assinatura.*/
     private Plano plano;
     
     /** Aluno associado à assinatura. */

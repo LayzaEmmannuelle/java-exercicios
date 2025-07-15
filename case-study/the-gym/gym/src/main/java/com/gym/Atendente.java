@@ -6,7 +6,7 @@ package com.gym;
  */
 public class Atendente extends Funcionario {
 
-    /** Número do guichê do atendente. */
+    /** Número do guichê do atendente.*/
     private int guiche;
 
     /**

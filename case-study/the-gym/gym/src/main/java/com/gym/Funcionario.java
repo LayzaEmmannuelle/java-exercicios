@@ -15,7 +15,7 @@ public class Funcionario extends Pessoa {
     /** Turno de trabalho do funcionário. */
     private String turno;
 
-    /** Salário do funcionário. */
+    /** Salário do funcionário.*/
     private String salario;
 
     /** Cargo ocupado pelo funcionário. */

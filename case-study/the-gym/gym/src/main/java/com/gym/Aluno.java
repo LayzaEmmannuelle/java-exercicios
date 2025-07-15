@@ -8,7 +8,7 @@ import java.util.List;
  */
 public class Aluno {
     
-    /** Matrícula do aluno. */
+    /** Matrícula do aluno.*/
     private int matricula;
     
     /** Nome completo do aluno. */

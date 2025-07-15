@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ *
  * Classe principal para executar um exemplo do sistema de academia.
  * 
  * Esta classe cria objetos representando as entidades principais do sistema:
@@ -16,6 +17,7 @@ import java.util.List;
  * armazenadas para cada tipo de entidade.
  * 
  * Essa classe serve como ponto de entrada para testes e demonstração do sistema.
+ * 
  */
 public class Main {
     /**

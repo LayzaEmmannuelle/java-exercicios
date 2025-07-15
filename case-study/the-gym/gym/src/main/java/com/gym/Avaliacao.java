@@ -8,7 +8,7 @@ public class Avaliacao {
     /** Gênero do aluno avaliado (ex: 'f' para feminino, 'm' para masculino). */
     private char genero;
 
-    /** Data em que a avaliação foi realizada. */
+    /** Data em que a avaliação foi realizada.*/
     private String data;
 
     /** Altura do aluno em metros. */
