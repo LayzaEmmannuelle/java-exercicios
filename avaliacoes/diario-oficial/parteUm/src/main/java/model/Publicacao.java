@@ -2,6 +2,9 @@ package model;
 
 import java.util.ArrayList;
 
+/**
+ * Representa uma publicação oficial, composta por um título, órgão responsável e uma lista de blocos de conteúdo.
+ */
 public class Publicacao {
 
     private String tituloPrincipal;
@@ -10,17 +13,34 @@ public class Publicacao {
     private Orgao orgao;
     private ArrayList<Bloco> blocos;
 
+    /**
+     * Construtor padrão, inicializa a lista de blocos vazia.
+     */
     public Publicacao() {
         this.blocos = new ArrayList<Bloco>();
     }
 
+    /**
+     * Construtor que inicializa a publicação com uma lista de blocos.
+     * 
+     * @param blocos lista de blocos que compõem o conteúdo da publicação
+     */
     public Publicacao(ArrayList<Bloco> blocos) {
         this.blocos = blocos;
     }
 
-    public Publicacao(String tituloPrincial, String tituloAuxiliar, String conteudo, Orgao orgao,
+    /**
+     * Construtor completo da publicação.
+     * 
+     * @param tituloPrincipal título principal da publicação
+     * @param tituloAuxiliar título auxiliar da publicação (opcional)
+     * @param conteudo conteúdo textual geral da publicação (pode ser nulo se usar blocos)
+     * @param orgao órgão responsável pela publicação
+     * @param blocos lista de blocos que compõem o conteúdo da publicação
+     */
+    public Publicacao(String tituloPrincipal, String tituloAuxiliar, String conteudo, Orgao orgao,
             ArrayList<Bloco> blocos) {
-        this.tituloPrincipal = tituloPrincial;
+        this.tituloPrincipal = tituloPrincipal;
         this.tituloAuxiliar = tituloAuxiliar;
         this.conteudo = conteudo;
         this.orgao = orgao;
@@ -67,6 +87,11 @@ public class Publicacao {
         this.blocos = blocos;
     }
 
+    /**
+     * Imprime o conteúdo da publicação no console.
+     * Atualmente, apenas blocos do tipo Texto são exibidos.
+     * Para blocos do tipo Imagem e Tabela, será necessário implementar a exibição adequada.
+     */
     public void imprimirPublicação() {
         for (Bloco b : this.getBlocos()) {
             switch (b.getTipo()) {
@@ -74,9 +99,11 @@ public class Publicacao {
                     System.out.println(b.getTexto());
                     break;
                 case Imagem:
-                    // Implementar um mecanismo para exibir imagens.
+                    // TODO: Implementar exibição de imagens
+                    break;
                 case Tabela:
-                    // Implementar um mecanismo para exibir tabelas.
+                    // TODO: Implementar exibição de tabelas
+                    break;
             }
         }
     }
