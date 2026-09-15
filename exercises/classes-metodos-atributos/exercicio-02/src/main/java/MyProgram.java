@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+/**
+ * Classe MyProgram que define a aplicação para classes e métodos.
+ * Lê duas notas do usuário, calcula a média e informa se o aluno foi aprovado, reprovado ou se
+ * está na prova final.
+ * 
+ */
 public class MyProgram {
 
     public static void main(String[] args) {

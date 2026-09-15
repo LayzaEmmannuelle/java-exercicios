@@ -1,4 +1,4 @@
-package model;
+package prova.tedlasso.model;
 
 import java.util.Date;
 

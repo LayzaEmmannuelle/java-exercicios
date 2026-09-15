@@ -1,3 +1,8 @@
+/**
+ * Classe que representa os personagens.
+ * Possui energia.
+ * 
+ */
 import java.util.ArrayList;
 
 /**
@@ -14,20 +19,25 @@ public class Personagens {
     }
 
     /**
-     * Construtor da classe Personagens.
-     * @param energia A energia do personagem.
+     * Construtor da classe Personagens com energia.
+     * 
+     * @param energia Valor que representa a energia do personagem.
      */
     public Personagens(float energia) {
         this.energia = energia;
     }
 
     /**
-     * Método para verificar o status do personagem.
+     * Método que define o status de um personagem após um dano causado por algum poder.
+     * Compara o dano recebido com os danos dos poderes e exibe qual deles causou aquele dano, se
+     * algum for correspondente.
+     * Subtrai o dano causado da energia do personagem e mostra se ele resistiu ou morreu.
+     * 
      * @param poder Lista de poderes disponíveis.
-     * @param nome Nome do personagem.
-     * @param dano_recebido Dano recebido pelo personagem.
-     * @param energiainimigo Energia do inimigo.
-     * @return A energia restante do inimigo após o dano recebido.
+     * @param nome Nome do personagem que está recebendo o dano.
+     * @param dano_recebido Valor do dano que foi causado.
+     * @param energiainimigo Energia atual do personagem antes de receber o dano.
+     * @return Energia do personagem após receber o dano.
      */
     public float status(ArrayList<Poder> poder, String nome, float dano_recebido, float energiainimigo){
 
@@ -64,16 +74,18 @@ public class Personagens {
     }
 
     /**
-     * Método para retornar a energia do personagem.
-     * @return A energia do personagem.
+     * Retorna o valor que representa a energia do personagem.
+     * 
+     * @return Valor que representa a energia do personagem
      */
     public float getEnergia() {
         return energia;
     }
 
     /**
-     * Método para definir a energia do personagem.
-     * @param energia A energia do personagem.
+     * Define o valor que representa a energia do personagem.
+     * 
+     * @param energia Novo valor que representa a energia do personagem
      */
     public void setEnergia(float energia) {
         this.energia = energia;

@@ -1,5 +1,7 @@
 /**
- * Classe BadFish que herda da classe Personagens.
+ * Classe que representa o personagem BadFish, herda da classe Personagens.
+ * Possui nome e controle de dano recebido.
+ * 
  */
 public class BadFish extends Personagens{
 
@@ -13,9 +15,10 @@ public class BadFish extends Personagens{
     }
 
     /**
-     * Construtor da classe BadFish.
-     * @param energia A energia do BadFish.
-     * @param cod O código do BadFish.
+     * Construtor da classe BadFish com energia e nome.
+     * 
+     * @param energia Valor que representa a energia possuída pelo personagem
+     * @param cod Nome do personagem
      */
     public BadFish(float energia, String cod) {
         super(energia);
@@ -23,36 +26,39 @@ public class BadFish extends Personagens{
     }
 
     /**
-     * Método para retornar o nome do BadFish.
-     * @return O nome do BadFish.
+     * Retorna o nome do personagem.
+     * 
+     * @return Nome do personagem
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * Método para definir o nome do BadFish.
-     * @param cod O nome do BadFish.
+     * Define o nome do personagem.
+     * 
+     * @param cod Novo nome do personagem
      */
     public void setNome(String cod) {
         this.nome = cod;
     }
 
     /**
-     * Método para retornar dano que o BadFish recebeu.
-     * @return O dano recebido pelo BadFish.
+     * Retorna o valor do dano recebido pelo personagem.
+     * 
+     * @return Valor do dano recebido
      */
     public float getDano_recebido() {
         return dano_recebido;
     }
 
     /**
-     * Método para definir o dano que o BadFish recebeu.
-     * @param dano_recebido O dano recebido pelo BadFish.
+     * Define o valor do dano recebido pelo personagem.
+     * 
+     * @param dano_recebido Novo valor do dano recebido
      */
     public void setDano_recebido(float dano_recebido) {
         this.dano_recebido = dano_recebido;
     }
-    
     
 }

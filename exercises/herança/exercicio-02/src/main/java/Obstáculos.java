@@ -1,5 +1,7 @@
 /**
- * Classe Obstáculos que herda da classe Personagens.
+ * Classe que representa os obstáculos, herda de Personagens.
+ * Possui nome e material.
+ * 
  */
 public class Obstáculos extends Personagens{
 
@@ -13,49 +15,52 @@ public class Obstáculos extends Personagens{
     }
 
     /**
-     * Construtor da classe Obstáculos.
-     * @param nome O nome do obstáculo.
-     * @param energia A energia do obstáculo.
-     * @param material O material do obstáculo.
+     * Construtor da classe Obstáculos com nome, energia e material.
+     * 
+     * @param nome Nome do obstáculo
+     * @param energia Valor que representa a energia do obstáculos
+     * @param material Material que compõe o obstáculo
      */
     public Obstáculos(String nome, float energia, String material) {
         super(energia);
         this.nome = nome;
         this.material = material;
     }
-    
+   
     /**
-     * Método para retornar o material do obstáculo.
-     * @return O material do obstáculo.
+     * Retorna o material que compõe o obstáculo.
+     * 
+     * @return Material que compõe o obstáculo
      */
     public String getMaterial() {
         return material;
     }
 
     /**
-     * Método para definir o material do obstáculo.
-     * @param material O material do obstáculo.
+     * Define o material que compõe o obstáculo.
+     * 
+     * @param material Novo material que compõe o obstáculo
      */
     public void setMaterial(String material) {
         this.material = material;
     }
 
     /**
-     * Método para retornar o nome do obstáculo.
-     * @return O nome do obstáculo.
+     * Retorna o nome do obstáculo.
+     * 
+     * @return Nome do obstáculo
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * Método para definir o nome do obstáculo.
-     * @param nome O nome do obstáculo.
+     * Define o nome do obstáculo.
+     * 
+     * @param nome Novo nome do obstáculo.
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    
     
 }

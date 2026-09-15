@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Classe MyProgram que define a aplicação para classes e métodos.
+ * Lê três valores dos coeficientes "a", "b" e "c" e mostra as raízes da equação. 
+ * 
+ */
 public class MyProgram {
 
     public static void main(String[] args) {

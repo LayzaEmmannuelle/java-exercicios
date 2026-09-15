@@ -1,13 +1,13 @@
-package controller;
+package prova.tedlasso.controller;
 
-import model.Match;
-import model.Team;
-import jakarta.servlet.annotation.WebServlet;
+import  java.io.IOException;
+
+import  jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpServletRequest;
-
-import java.io.IOException;
+import jakarta.servlet.http.HttpServletResponse;
+import prova.tedlasso.model.Match;
+import prova.tedlasso.model.Team;
 
 @WebServlet("/matchController")
 public class matchController extends HttpServlet {

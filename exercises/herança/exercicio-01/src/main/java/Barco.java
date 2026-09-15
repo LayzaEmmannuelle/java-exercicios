@@ -1,12 +1,14 @@
 /**
- * Classe Barco que herda da classe Veículo.
+ * Classe que representa um barco, herda da classe Veículo.
+ * Possui registro da embarcação, controle de navegação e controle de ancoragem.
+ * 
  */
 public class Barco extends Veículo{
 
     private String registro_embarcação;
     private boolean navegar;
     private boolean ancorar = true;
-    
+
     /**
      * Construtor padrão da classe Barco.
      */
@@ -14,8 +16,9 @@ public class Barco extends Veículo{
     }
 
     /**
-     * Construtor da classe Barco.
-     * @param registro_embarcação O registro da embarcação.
+     * Construtor da classe Barco com número do registro da embarcação.
+     * 
+     * @param registro_embarcação Número do registro da embarcação
      */
     public Barco(String registro_embarcação) {
         this.registro_embarcação = registro_embarcação;
@@ -90,16 +93,18 @@ public class Barco extends Veículo{
     }
 
     /**
-     * Método para pegar registro da embarcação.
-     * @return o registro da embarcação.
+     * Retorna o número do registro da embarcação do barco.
+     * 
+     * @return Número do registro da embarcação do barco
      */
     public String getRegistro_embarcação() {
         return registro_embarcação;
     }
 
     /**
-     * Método para definir o registro da embarcação.
-     * @param registro_embarcação o registro da embarcação.
+     * Define o número do registro da embarcação do barco.
+     * 
+     * @param registro_embarcação Novo número do registro da embarcação do barco
      */
     public void setRegistro_embarcação(String registro_embarcação) {
         this.registro_embarcação = registro_embarcação;

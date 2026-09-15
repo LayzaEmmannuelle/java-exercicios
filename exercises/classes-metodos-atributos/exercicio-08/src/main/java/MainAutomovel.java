@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+/**
+ * Classe MyProgram que define a aplicação para classes e métodos.
+ * 
+ */
 public class MainAutomovel {
     
     public static void main(String[] args) {

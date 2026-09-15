@@ -1,5 +1,7 @@
 /**
- * Classe Automovél que herda da classe Veículo.
+ * Classe que representa um automóvel, herda da classe Veículo.
+ * Possui renavam, placa e controle de marcha.
+ * 
  */
 public class Automovél extends Veículo{
     
@@ -15,9 +17,10 @@ public class Automovél extends Veículo{
     }
 
     /**
-     * Construtor da classe Automovél.
-     * @param renavam O renavam do automóvel. 
-     * @param placa A placa do automóvel.
+     * Construtor da classe Automóvel com renavan e placa.
+     * 
+     * @param renavam Número do renavam do automóvel
+     * @param placa Placa do automóvel
      */
     public Automovél(String renavam, String placa) {
         this.renavam = renavam;
@@ -78,34 +81,37 @@ public class Automovél extends Veículo{
         }
     }
 
-
     /**
-     * Método para obter o renavam do automóvel.
-     * @return o renavam do automóvel.
+     * Retorna o número do renavam do automóvel.
+     * 
+     * @return Número do renavam do automóvel
      */
     public String getRenavam() {
         return renavam;
     }
 
     /**
-     * Método para definir o renavam do automóvel.
-     * @param renavam o renavam do automóvel.
+     * Define o número do renavam do automóvel.
+     * 
+     * @param renavam Novo número do renavam do veículo
      */
     public void setRenavam(String renavam) {
         this.renavam = renavam;
     }
 
     /**
-     * Método para obter a placa do automóvel.
-     * @return placa do automóvel.
+     * Retorna a placa do automóvel.
+     * 
+     * @return Placa do automóvel
      */
     public String getPlaca() {
         return placa;
     }
 
     /**
-     * Método para definir a placa do automóvel.
-     * @param placa a placa do automóvel.
+     * Define a placa do automóvel.
+     * 
+     * @param placa Nova placa do automóvel
      */
     public void setPlaca(String placa) {
         this.placa = placa;

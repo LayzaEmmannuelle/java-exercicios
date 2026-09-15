@@ -1,5 +1,7 @@
 /**
- * Classe Poder que representa os poderes de um personagem.
+ * Classe que representa o poder do personagem.
+ * Possui nome e valor do dano.
+ * 
  */
 public class Poder {
 
@@ -15,9 +17,10 @@ public class Poder {
     }
 
     /**
-     * Construtor da classe Poder.
-     * @param poder O nome do poder.
-     * @param dano O dano causado pelo poder.
+     * Construtor da classe Poder com nome e dano.
+     * 
+     * @param poder Nome do poder
+     * @param dano Valor do dano
      */
     public Poder(String poder, float dano) {
         if (qtd_instancia >= 4) {
@@ -31,32 +34,36 @@ public class Poder {
     }
 
     /**
-     * Método para retornar o nome do poder.
-     * @return O nome do poder.
+     * Retorna o nome do poder.
+     * 
+     * @return Nome do poder
      */
     public String getPoder() {
         return poder;
     }
 
     /**
-     * Método para definir o nome do poder.
-     * @param poder O nome do poder.
+     * Define o nome do poder.
+     * 
+     * @param poder Novo nome do poder
      */
     public void setPoder(String poder) {
         this.poder = poder;
     }
 
     /**
-     * Método para retornar o dano causado pelo poder.
-     * @return O dano causado pelo poder.
+     * Retorna o valor do dano do poder.
+     * 
+     * @return Valor do dano do poder
      */
     public float getDano() {
         return dano;
     }
 
     /**
-     * Método para definir o dano causado pelo poder.
-     * @param dano O dano causado pelo poder.
+     * Define o valor do dano do poder.
+     * 
+     * @param dano Novo valor do dano do poder
      */
     public void setDano(float dano) {
         this.dano = dano;

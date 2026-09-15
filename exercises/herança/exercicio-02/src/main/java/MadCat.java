@@ -1,5 +1,7 @@
 /**
- * Classe MadCat que herda da classe Personagens.
+ * Classe que representa a personagem MadCat, herda da classe Personagens.
+ * Possui nome e controle de dano recebido.
+ * 
  */
 public class MadCat extends Personagens{
     
@@ -7,15 +9,16 @@ public class MadCat extends Personagens{
     private float dano_recebido;
 
     /**
-     * Construtor padrão da classe MadCat.
+     * Construtor padrão da classe MadCat. 
      */
     public MadCat() {
     }
 
     /**
-     * Construtor da classe MadCat.
-     * @param energia A energia do MadCat.
-     * @param nome O nome do MadCat.
+     * Construtor da classe MadCat com energia e nome.
+     * 
+     * @param energia Valor que representa a energia da personagem
+     * @param nome Nome da personagem
      */
     public MadCat(float energia, String nome) {
         super(energia);
@@ -23,37 +26,39 @@ public class MadCat extends Personagens{
     }
 
     /**
-     * Método para retornar o nome do MadCat.
-     * @return O nome do MadCat.
+     * Retorna o nome da personagem.
+     * 
+     * @return Nome da personagem.
      */
     public String getNome() {
         return nome;
     }
 
     /**
-     * Método para definir o nome do MadCat.
-     * @param nome O nome do MadCat.
+     * Define o nome da personagem.
+     * 
+     * @param nome Novo nome da personagem
      */
     public void setNome(String nome) {
         this.nome = nome;
     }
 
     /**
-     * Método para retornar o dano que o MadCat recebeu.
-     * @return O dano recebido pelo MadCat.
+     * Retorna o valor que representa a quantidade de dano recebido.
+     * 
+     * @return Valor que representa a quantidade de dano recebido
      */
     public float getDano_recebido() {
         return dano_recebido;
     }
 
     /**
-     * Método para definir o dano que o MadCat recebeu.
-     * @param dano_recebido O dano recebido pelo MadCat.
+     * Define o valor que representa a quantidade de dano recebido.
+     * 
+     * @param dano_recebido Novo valor que representa a quantidade de dano recebido
      */
     public void setDano_recebido(float dano_recebido) {
         this.dano_recebido = dano_recebido;
     }
-
-    
 
 }

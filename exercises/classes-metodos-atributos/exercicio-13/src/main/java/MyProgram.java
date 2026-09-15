@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
+/**
+ * Classe MyProgram que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MyProgram {
 
     public static void main(String[] args) {
