@@ -25,8 +25,9 @@ public class Barco extends Veículo{
     }
 
     /**
-     * Método que representa a navegação do barco.
-     * Leva em consideração se ele ligado.
+     * Método para navegar com o veículo, se estiver ancorado, não faz nada.
+     * Se já estiver navegando, não faz nada.
+     * Se o veículo estiver desligado, não é possível navegar.
      */
     public void navegar(){
 
@@ -50,8 +51,8 @@ public class Barco extends Veículo{
     }
 
     /**
-     * Método que representa a ancoragem do barco.
-     * Leva em consideração se ele está ligado.
+     * Método para ancorar o veículo, se já estiver ancorado, não faz nada.
+     * Se o veículo estiver desligado, não é possível ancorar.
      */
     public void ancorar(){
 
@@ -72,8 +73,8 @@ public class Barco extends Veículo{
     }
 
     /**
-     * Método que representa a desatracação do barco.
-     * Leva em consideração se ele está ligado.
+     * Método para desancorar o veículo, se já estiver desancorado, não faz nada.
+     * Se o veículo estiver desligado, não é possível desancorar.
      */
     public void desancorar(){
         if (isOn() == true) {

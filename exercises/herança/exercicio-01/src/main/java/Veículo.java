@@ -40,8 +40,8 @@ public class Veículo {
     }
 
     /**
-     * Método que representa a aceleração de um veículo.
-     * Leva em consideração se ele está ligado.
+     * Método para movimentar o veículo para frente, se já estiver em movimento, não faz nada.
+     * Se o veículo estiver desligado, não é possível se locomover.
      */
     public void mover_frente(){
 
@@ -62,8 +62,8 @@ public class Veículo {
     }
 
     /**
-     * Método que representa a ré de um veículo.
-     * Leva em consideração se ele está ligado.
+     * Método para movimentar o veículo de ré, se já estiver em movimento de ré, não faz nada.
+     * Se o veículo estiver desligado, não é possível se locomover de ré.
      */
     public void mover_re(){
 
@@ -85,8 +85,8 @@ public class Veículo {
     }
 
     /**
-     * Método que representa a paragem de um veículo.
-     * Leva em consideração se ele está ligado.
+     * Método para parar o veículo, se já estiver parado, não faz nada.
+     * Se o veículo estiver desligado, não é possível parar.
      */
     public void parar(){
 
@@ -158,8 +158,5 @@ public class Veículo {
     public void setRe(boolean re) {
         this.re = re;
     }
-
-    
-    
     
 }

@@ -61,5 +61,4 @@ public class BadFish extends Personagens{
         this.dano_recebido = dano_recebido;
     }
     
-    
 }

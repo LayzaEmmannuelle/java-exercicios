@@ -11,7 +11,7 @@ public class Automovél extends Veículo{
     private int cont = 0;
     
     /**
-     * Construtor padrão da classe automóvel.
+     * Construtor padrão da classe Automovél.
      */
     public Automovél() {
     }
@@ -28,8 +28,9 @@ public class Automovél extends Veículo{
     }
 
     /**
-     * Método que representa a passagem de marcha do automóvel.
-     * Leva em consideração se ele está ligado e também se está em movimento.
+     * Método para passar a marcha do veículo, se já passou o limite de marchas, não faz nada.
+     * Se o veículo estiver desligado, não é possível passar marcha.
+     * Se o veículo estiver parado, não é possível passar marcha. 
      */
     public void passar_marcha(){
 
@@ -56,8 +57,10 @@ public class Automovél extends Veículo{
     }
 
     /**
-     * Método que representa a frenagem do automóvel.
-     * Leva em consideração se ele está ligado.
+     * Método para frear o veículo, se estiver em ponto morto, não faz nada.
+     * Se o veículo estiver ligado e indo para frente ou de ré, reduz uma marcha.
+     * Se a marcha já estiver na primeira, não faz nada.
+     * Se o veículo estiver desligado, não é possível frear.
      */
     public void frear(){
 

@@ -1,10 +1,21 @@
 import java.util.ArrayList;
 
+/**
+ * Classe Pesquisa_Publicações.
+ */
 public class Pesquisa_Publicações {
 
+    /**
+     * Método construtor padrão da classe Pesquisa_Publicações.
+     */
     public Pesquisa_Publicações() {
     }
     
+    /**
+     * Método que busca publicações por coordenador.
+     * @param publi Lista de publicações.
+     * @param ap Coordenador.
+     */
     public void buscar_publicações_areadepesquisa(ArrayList<Publicações> publi, Areas_pesquisas ap){
 
         int qtd = 0;

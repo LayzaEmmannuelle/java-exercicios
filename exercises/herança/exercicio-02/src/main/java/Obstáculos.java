@@ -62,7 +62,5 @@ public class Obstáculos extends Personagens{
     public void setNome(String nome) {
         this.nome = nome;
     }
-
-    
     
 }

@@ -61,6 +61,4 @@ public class MadCat extends Personagens{
         this.dano_recebido = dano_recebido;
     }
 
-    
-
 }

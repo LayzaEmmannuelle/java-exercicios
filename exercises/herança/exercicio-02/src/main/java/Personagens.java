@@ -5,6 +5,9 @@
  */
 import java.util.ArrayList;
 
+/**
+ * Classe Personagens que serve como base para outros personagens.
+ */
 public class Personagens {
 
     private float energia;

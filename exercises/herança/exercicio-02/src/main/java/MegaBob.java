@@ -59,8 +59,6 @@ public class MegaBob extends Personagens{
      */
     public void setDano_recebido(float dano_recebido) {
         this.dano_recebido = dano_recebido;
-    }
-
-    
+    }   
     
 }

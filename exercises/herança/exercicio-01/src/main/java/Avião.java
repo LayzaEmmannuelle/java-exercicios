@@ -23,9 +23,10 @@ public class Avião extends Veículo{
         this.registro_aeronaútico = registro_aeronaútico;
     }
 
+
     /**
-     * Método que representa a decolagem do avião.
-     * Leva em consideração se ele está ligado.
+     * Método para decolar o veículo, se já tiver decolado, não faz nada.
+     * Se o veículo estiver desligado, não é possível decolar.
      */
     public void decolar(){
 
@@ -82,9 +83,6 @@ public class Avião extends Veículo{
      */
     public void setRegistro_aeronaútico(String registro_aeronaútico) {
         this.registro_aeronaútico = registro_aeronaútico;
-    }
-
-    
-    
+    }    
     
 }
