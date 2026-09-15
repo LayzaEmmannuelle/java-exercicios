@@ -1,9 +1,18 @@
+/**
+ * Classe que representa um veículo.
+ * Possui controle de partida, controle de aceleração e controle de ré.
+ *  
+ */
 public class Veículo {
 
     private boolean on;
     private boolean frente;
     private boolean re;
 
+    /**
+     * Método que representa a partida de um veículo.
+     * Leva em consideração se ele está desligado.
+     */
     public void ligar(){
 
         if (on == false){
@@ -15,6 +24,10 @@ public class Veículo {
         }
     }
 
+    /**
+     * Método que representa o desligamento de um veículo.
+     * Leva em consideração se ele está ligado.
+     */
     public void desligar(){
 
         if (on == true){
@@ -26,6 +39,10 @@ public class Veículo {
         }
     }
 
+    /**
+     * Método que representa a aceleração de um veículo.
+     * Leva em consideração se ele está ligado.
+     */
     public void mover_frente(){
 
         if (on == true) {
@@ -44,6 +61,10 @@ public class Veículo {
         
     }
 
+    /**
+     * Método que representa a ré de um veículo.
+     * Leva em consideração se ele está ligado.
+     */
     public void mover_re(){
 
         if (on == true) {
@@ -63,6 +84,10 @@ public class Veículo {
         
     }
 
+    /**
+     * Método que representa a paragem de um veículo.
+     * Leva em consideração se ele está ligado.
+     */
     public void parar(){
 
         if (on == true) {
@@ -80,26 +105,56 @@ public class Veículo {
         }
     }
 
+    /**
+     * Retorna o estado do veículo: Ligado ou Desligado.
+     * 
+     * @return Estado do veículo: Ligado(true) ou Desligado(false)
+     */
     public boolean isOn() {
         return on;
     }
 
+    /**
+     * Define o estado do veículo: Ligado ou desligado.
+     * 
+     * @param on Novo estado do veículo: Ligado(true) ou Desligado(false)
+     */
     public void setOn(boolean on) {
         this.on = on;
     }
 
+    /**
+     * Retorna o estado de movimento do veículo: Indo para frente ou Não.
+     * 
+     * @return Estado de movimento do veículo: Indo para frente(true) ou Não(false)
+     */
     public boolean isFrente() {
         return frente;
     }
 
+    /**
+     * Define o estado de movimento do veículo: Indo para frente ou Não.
+     * 
+     * @param frente Novo estado de movimento do veículo: Indo para frente(true) ou Não(false)
+     */
     public void setFrente(boolean frente) {
         this.frente = frente;
     }
 
+    /**
+     * Retorna o estado de movimento do veículo: Dando ré ou Não.
+     * 
+     * @return Estado de movimento do veículo: Dando ré(true) ou Não(false)
+     */
     public boolean isRe() {
         return re;
     }
 
+    /**
+     * Define o estado de movimento do veículo: Dando ré ou Não.
+     * 
+     * @param re Novo estado de movimento do veículo: Dando ré(true) ou Não(false)
+     */
     public void setRe(boolean re) {
         this.re = re;
     }

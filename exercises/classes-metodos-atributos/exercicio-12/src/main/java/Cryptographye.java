@@ -1,12 +1,25 @@
+/**
+ * Classe que representa uma criptografia.
+ * Possui frase.
+ * 
+ */
 public class Cryptographye {
 
     private String frase;
     private char encrypt[] = new char[100];
 
+    /**
+     * Construtor da classe Cryptographye com frase.
+     * 
+     * @param frase Frase para criptografar
+     */
     public Cryptographye (String frase){
         this.frase = frase;
     }
 
+    /**
+     * Método para criptografar a frase.
+     */
     public void encrypt(){
         for (int i = 0; i < frase.length(); i++){
             encrypt[i] = frase.charAt(i);
@@ -38,6 +51,9 @@ public class Cryptographye {
 
     }
 
+    /**
+     * Método para descriptografar a frase.
+     */
     public void decrypt(){
         for (int i = 0; i < frase.length(); i++){
             encrypt[i] = frase.charAt(i);
@@ -67,10 +83,20 @@ public class Cryptographye {
         System.out.println("Frase desencriptpgrafada: "+frase);
     }
     
+    /**
+     * Define a frase.
+     * 
+     * @param frase Frase
+     */
     public void setFrase(String frase){
         this.frase = frase;
     }
 
+    /**
+     * Retorna a frase.
+     * 
+     * @return Frase
+     */
     public String getFrase(){
         return frase;
     }

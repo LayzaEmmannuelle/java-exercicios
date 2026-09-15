@@ -1,3 +1,7 @@
+/**
+ * Classe MainCelula que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainCelula {
 
     public static void main(String[] args) {

@@ -1,3 +1,8 @@
+/**
+ * Classe que representa um automóvel, herda da classe Veículo.
+ * Possui renavam, placa e controle de marcha.
+ * 
+ */
 public class Automovél extends Veículo{
     
     private String renavam;
@@ -5,15 +10,27 @@ public class Automovél extends Veículo{
     private boolean marcha;
     private int cont = 0;
     
-    
+    /**
+     * Construtor padrão da classe automóvel.
+     */
     public Automovél() {
     }
 
+    /**
+     * Construtor da classe Automóvel com renavan e placa.
+     * 
+     * @param renavam Número do renavam do automóvel
+     * @param placa Placa do automóvel
+     */
     public Automovél(String renavam, String placa) {
         this.renavam = renavam;
         this.placa = placa;
     }
 
+    /**
+     * Método que representa a passagem de marcha do automóvel.
+     * Leva em consideração se ele está ligado e também se está em movimento.
+     */
     public void passar_marcha(){
 
         if ((isOn() == true) && ((isFrente() == true) || (isRe() == true))){
@@ -38,6 +55,10 @@ public class Automovél extends Veículo{
         }
     }
 
+    /**
+     * Método que representa a frenagem do automóvel.
+     * Leva em consideração se ele está ligado.
+     */
     public void frear(){
 
         if (isOn() == true) {
@@ -57,16 +78,38 @@ public class Automovél extends Veículo{
         }
     }
 
-
+    /**
+     * Retorna o número do renavam do automóvel.
+     * 
+     * @return Número do renavam do automóvel
+     */
     public String getRenavam() {
         return renavam;
     }
+
+    /**
+     * Define o número do renavam do automóvel.
+     * 
+     * @param renavam Novo número do renavam do veículo
+     */
     public void setRenavam(String renavam) {
         this.renavam = renavam;
     }
+
+    /**
+     * Retorna a placa do automóvel.
+     * 
+     * @return Placa do automóvel
+     */
     public String getPlaca() {
         return placa;
     }
+
+    /**
+     * Define a placa do automóvel.
+     * 
+     * @param placa Nova placa do automóvel
+     */
     public void setPlaca(String placa) {
         this.placa = placa;
     }
