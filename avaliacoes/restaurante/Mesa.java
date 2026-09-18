@@ -1,4 +1,4 @@
-package restaurante.cefet;
+package restaurante;
 
 public class Mesa {
     private String numero;

@@ -9,8 +9,10 @@ public class MyApp {
         Endereco enderecoCliente = new Endereco("Rua da Jaca", "205789003", 44);
         Menu menu = new Menu(new ArrayList<Produto>());
         Mesa mesa = new Mesa("213", "Terrace");
-        Restaurante restaurante = new Restaurante("Anvileo Rooftop, Lda.", "12345678912345", "Casa Guedes", endereco, new ArrayList<Mesa>(), menu);
-        Funcionario funcionario = new Funcionario("Bia", "123456789-01", enderecoFuncionario, "12345678901", "Garçom", new ArrayList<Mesa>());
+        Restaurante restaurante = new Restaurante("Anvileo Rooftop, Lda.", "12345678912345", "Casa Guedes", endereco,
+                new ArrayList<Mesa>(), menu);
+        Funcionario funcionario = new Funcionario("Bia", "123456789-01", enderecoFuncionario, "12345678901", "Garçom",
+                new ArrayList<Mesa>());
         Cliente cliente = new Cliente("Layza", "17527967760", endereco, 0);
         Produto coca = new Produto("Coca-Cola", 7);
         Produto cachaca = new Produto("Cachacinha", 33);
@@ -33,6 +35,6 @@ public class MyApp {
         pedido.setItens(itens);
         pedido.getNotaFiscal().addProduto(itens);
         pedido.encerrar();
-        
+
     }
 }

@@ -1,4 +1,4 @@
-package restaurante.cefet;
+package restaurante;
 
 public class Cliente extends Pessoa{
     private int numFid;

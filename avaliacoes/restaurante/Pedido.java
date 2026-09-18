@@ -1,4 +1,4 @@
-package restaurante.cefet;
+package restaurante;
 
 import java.util.List;
 

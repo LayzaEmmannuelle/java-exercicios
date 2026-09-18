@@ -1,4 +1,4 @@
-package restaurante.cefet;
+package restaurante;
 
 public class Endereco {
     private String tipo;

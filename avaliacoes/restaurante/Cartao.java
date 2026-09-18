@@ -1,4 +1,4 @@
-package restaurante.cefet;
+package restaurante;
 
 public class Cartao extends Pagamento {
     public void pagar() {
