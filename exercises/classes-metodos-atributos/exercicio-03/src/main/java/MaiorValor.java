@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Classe MaiorValor que define a aplicação para classes e métodos.
+ * Lê três valores e define o maior entre eles.
+ * 
+ */
 public class MaiorValor {
 
     public static void main(String[] args) {

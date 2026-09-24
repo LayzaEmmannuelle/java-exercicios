@@ -1,5 +1,7 @@
-import model.Player;
-import model.Team;
+package prova.tedlasso;
+
+import prova.tedlasso.model.Player;
+import prova.tedlasso.model.Team;
 
 public class MyApp {
     

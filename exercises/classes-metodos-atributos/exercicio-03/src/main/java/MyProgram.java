@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Classe MyProgram que define a aplicação para classes e métodos.
+ * Lê três valores e define o maior entre eles.
+ * 
+ */
 public class MyProgram {
 
     public static void main(String[] args) {

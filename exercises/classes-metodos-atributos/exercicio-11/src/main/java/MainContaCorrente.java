@@ -1,3 +1,7 @@
+/**
+ * Classe MainContaCorrente que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainContaCorrente {
 
     public static void main(String[] args) {

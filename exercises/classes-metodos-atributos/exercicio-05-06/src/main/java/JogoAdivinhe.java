@@ -1,6 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Classe JogoAdivinhe que define a aplicação para classes e métodos.
+ * Sorteia um valor aleatório entre 1 e 100 e pde para que o usuário entre com um valor.
+ * O usuário deve entrar com o valor até que acerte. Após isso será mostrado o número de tentativas.
+ * 
+ */
 public class JogoAdivinhe {
 
     @SuppressWarnings("unused")

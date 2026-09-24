@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/**
+ * Classe Contagem que define a aplicação para classes e métodos.
+ * Lê um valor que define uma contagem crescente(1-10) ou decrescente(10-1).
+ * 
+ */
 public class Contagem {
 
     public static void main(String[] args) {

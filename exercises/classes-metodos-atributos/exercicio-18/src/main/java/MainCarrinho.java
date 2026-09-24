@@ -1,6 +1,10 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+/**
+ * Classe MainCarrinho que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainCarrinho {
 
     public static void main(String[] args) {

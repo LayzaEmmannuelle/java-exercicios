@@ -1,3 +1,7 @@
+/**
+ * Classe MainCryptographye que define a aplicação das classes e métodos existentes.
+ * 
+ */
 public class MainCryptographye {
 
     public static void main(String[] args) {
